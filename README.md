@@ -1,16 +1,81 @@
-# React + Vite
+# 🛒 ShopSphere — E-Commerce Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ShopSphere is a modern and responsive e-commerce web application developed using React.js. The application provides a user-friendly shopping experience with product browsing, search and category filtering, product details, shopping cart management, and checkout functionality.
 
-Currently, two official plugins are available:
+## 🌐 Project Links
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Live Demo
 
-## React Compiler
+https://shopsphere-sage-mu.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### GitHub Repository
 
-## Expanding the ESLint configuration
+https://github.com/bharathkumar1525/ShopSphere
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- Responsive and modern user interface
+- Product listing and browsing
+- Product search functionality
+- Category-based product filtering
+- Product details page
+- Shopping cart management
+- Increase and decrease product quantity
+- Remove products from cart
+- Cart persistence using LocalStorage
+- Login interface
+- Checkout page
+- Order success page
+- React Router navigation
+- Responsive design for desktop and mobile devices
+
+---
+
+## 🛠️ Technologies Used
+
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- React Router DOM
+- LocalStorage
+- Vite
+- Git & GitHub
+- Vercel
+
+---
+
+## 📂 Project Structure
+
+```text
+ShopSphere/
+│
+├── src/
+│   ├── components/
+│   │   └── ProductCard.jsx
+│   │
+│   ├── data/
+│   │   └── products.js
+│   │
+│   ├── pages/
+│   │   ├── About.jsx
+│   │   ├── Cart.jsx
+│   │   ├── Categories.jsx
+│   │   ├── Checkout.jsx
+│   │   ├── Login.jsx
+│   │   ├── OrderSuccess.jsx
+│   │   ├── ProductDetails.jsx
+│   │   └── Products.jsx
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
