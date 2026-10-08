@@ -10,7 +10,7 @@ https://shopsphere-sage-mu.vercel.app/
 
 ### GitHub Repository
 
-https://github.com/bharathkumar1525/ShopSphere
+https://github.com/bharathsoftware/ShopSphere
 
 ---
 
