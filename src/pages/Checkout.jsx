@@ -1,4 +1,4 @@
-```jsx
+
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -350,4 +350,4 @@ function Checkout({ cart, onClear }) {
 }
 
 export default Checkout;
-```
+
