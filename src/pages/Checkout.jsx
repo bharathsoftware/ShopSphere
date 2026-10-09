@@ -68,7 +68,9 @@ function Checkout({ cart, onClear }) {
         <div className="checkout-heading">
           <p className="checkout-eyebrow">SHOPSPHERE CHECKOUT</p>
           <h1>Almost yours.</h1>
-          <p>Complete your details and get your favourites delivered.</p>
+          <p>
+            Complete your details and get your favourites delivered.
+          </p>
         </div>
 
         <div className="checkout-progress">
@@ -87,6 +89,7 @@ function Checkout({ cart, onClear }) {
 
         <form className="checkout-layout" onSubmit={handleSubmit}>
           <div className="checkout-main">
+            {/* Contact information */}
             <section className="checkout-panel">
               <div className="checkout-panel-heading">
                 <span className="checkout-number">01</span>
@@ -144,6 +147,7 @@ function Checkout({ cart, onClear }) {
               </div>
             </section>
 
+            {/* Delivery address */}
             <section className="checkout-panel">
               <div className="checkout-panel-heading">
                 <span className="checkout-number">02</span>
@@ -213,6 +217,7 @@ function Checkout({ cart, onClear }) {
               </div>
             </section>
 
+            {/* Payment method */}
             <section className="checkout-panel">
               <div className="checkout-panel-heading">
                 <span className="checkout-number">03</span>
@@ -268,6 +273,7 @@ function Checkout({ cart, onClear }) {
             {error && <p className="checkout-error">{error}</p>}
           </div>
 
+          {/* Order summary */}
           <aside className="checkout-summary">
             <div className="checkout-summary-heading">
               <div>
@@ -302,6 +308,7 @@ function Checkout({ cart, onClear }) {
                 <span>Subtotal</span>
                 <span>₹{subtotal.toLocaleString("en-IN")}</span>
               </div>
+
               <div>
                 <span>Delivery</span>
                 <span className={shipping === 0 ? "free-shipping" : ""}>
@@ -310,6 +317,7 @@ function Checkout({ cart, onClear }) {
                     : `₹${shipping.toLocaleString("en-IN")}`}
                 </span>
               </div>
+
               {shipping > 0 && (
                 <p className="checkout-shipping-note">
                   Free delivery on orders of ₹2,000 or more.
@@ -350,4 +358,3 @@ function Checkout({ cart, onClear }) {
 }
 
 export default Checkout;
-
